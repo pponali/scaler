@@ -7,7 +7,7 @@ package com.practice.day28;
 public class DivisorGame {
     public static void main(String[] args){
 
-        int A = 2, B = 3, C = 4;
+        int A = 24, B = 3, C = 4;
         System.out.println(divisorGame(A, B, C));
 
 

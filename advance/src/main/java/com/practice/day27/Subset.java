@@ -20,7 +20,7 @@ public class Subset {
         list.add(60);
         list.add(70);
 
-        list =  new ArrayList<>(new LinkedHashSet<>(list)) ;
+        list = new ArrayList<>(new LinkedHashSet<>(list));
         Collections.sort(list);
         System.out.println(list);
         System.out.println(subsets(list));
@@ -36,26 +36,15 @@ public class Subset {
 
     public static void subsets(
             ArrayList<Integer> A, int index,
-            ArrayList<ArrayList<Integer>> arrayLists, ArrayList<Integer> currentList){
-        if(index == A.size()){
-
+            ArrayList<ArrayList<Integer>> arrayLists, ArrayList<Integer> currentList) {
+        if (index == A.size()) {
             return;
         }
-
-
-
-
         currentList.add(A.get(index));
         arrayLists.add(new ArrayList<>(currentList));
         subsets(A, index + 1, arrayLists, currentList);
         currentList.remove(currentList.size() - 1);
-
-
         subsets(A, index + 1, arrayLists, currentList);
-
-
-
-
 
 
     }

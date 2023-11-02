@@ -8,7 +8,7 @@ public class CountPairDifference {
 
     public static void main(String[] args) {
         CountPairDifference countPairDifference = new CountPairDifference();
-        System.out.println(countPairDifference.solve(new int[]{2,1,2,1,2,1,2,1,2}, 1));
+        System.out.println(countPairDifference.solve(new int[]{-6,2,10}, 8));
     }
 
     //this problem is on the hash map

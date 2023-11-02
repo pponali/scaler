@@ -31,6 +31,7 @@ public class SubarraySumEqualsK {
             map.put(prefix, map.getOrDefault(prefix, 0) + 1);
         }
         */
+        map.put(0,1);
         for (int j : A) {
             prefix = prefix + j;
             if (map.containsKey(prefix - B)) {

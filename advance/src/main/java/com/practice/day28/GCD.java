@@ -7,7 +7,7 @@ package com.practice.day28;
 public class GCD {
 
     public static void main(String[] args) {
-        System.out.println(gcd(24, 16));
+        System.out.println(gcd(33, 22));
         System.out.println(gcd(6816621, 8157697));
 
         System.out.println(6816621 % 111241);

@@ -1,4 +1,4 @@
-package com.practice.day26;
+package com.practice.day26.additional;
 
 /**
  * @author prakashponali
