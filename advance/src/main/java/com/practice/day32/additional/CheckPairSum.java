@@ -1,4 +1,4 @@
-package com.practice.day32;
+package com.practice.day32.additional;
 
 import java.util.HashSet;
 
@@ -23,11 +23,11 @@ public class CheckPairSum {
 
         HashSet<Integer> set = new HashSet<>();
         //iterate over all the items and search for the complement
-        for (int i = 0; i < B.length; i++) {
+        for (int j : B) {
             //complement = target - a[i]
-            int complement = A - B[i];
+            int complement = A - j;
             //check if the complement present or not
-            if (set.contains(B[i])) {
+            if (set.contains(j)) {
                 return 1;
             } else {
                 set.add(complement);

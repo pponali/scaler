@@ -1,4 +1,4 @@
-package com.practice.sep30;
+package com.practice.day20;
 
 import java.util.*;
 import java.util.stream.IntStream;
