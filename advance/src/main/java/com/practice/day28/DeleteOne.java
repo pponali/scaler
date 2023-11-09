@@ -25,17 +25,17 @@ public class DeleteOne {
         //A={24,16,18,_,15}	= gcd = 1
         //A={24,16,18,30,_}	= gcd = 2
 
-        //Second entry will be having the largest value soafter removing 16 we can get the hight GCD for the remaining values.
+        //Second entry will be having the largest value so after removing 16 we can get the height GCD for the remaining values.
         // Brute force calculating GCD for the remaining elements O(N^2) two loops needs to be iterated.
 
-        //Instead do the prefix GCD that means GCD(A[i], A[i+1]) and sufix GCD(A[N-i], A[N-i+1])
+        //Instead do the prefix GCD that means GCD(A[i], A[i+1]) and suffix GCD(A[N-i], A[N-i+1])
 
         //	A={24,16,18,30,15}
         //prefixGCD={24,8,2,2,1}
         //suffixGCD={1,1,3,15,15}
 
         //prefix GCD
-        ArrayList<Integer> prefixArray = new ArrayList();
+        ArrayList<Integer> prefixArray = new ArrayList<>();
         prefixArray.add(A.get(0));
         for (int i = 1; i < A.size(); i++) {
             int gcd = gcd(A.get(i), prefixArray.get(i - 1));
@@ -43,14 +43,14 @@ public class DeleteOne {
         }
 
 
-        ArrayList<Integer> suffixArray = new ArrayList();
+        ArrayList<Integer> suffixArray = new ArrayList<>();
         int[] Ab = new int[A.size()];
         Ab[A.size() - 1] = A.get(A.size() - 1);
         for (int i = A.size() - 2; i >= 0; i--) {
             Ab[i] = gcd(A.get(i), Ab[i + 1]);
         }
-        for (int i = 0; i < Ab.length; i++) {
-            suffixArray.add(Ab[i]);
+        for (int j : Ab) {
+            suffixArray.add(j);
         }
 
 
@@ -62,9 +62,9 @@ public class DeleteOne {
         // to calculate GCD, we have to skip that index take the previous and next index for the current GCD.
 
         // max of all the GCDs
-        int left = 0;
-        int right = 0;
-        int value = 0;
+        int left;
+        int right;
+        int value;
         for (int i = 1; i < A.size() - 1; i++) {
             left = prefixArray.get(i - 1);
             right = suffixArray.get(i + 1);

@@ -10,6 +10,7 @@ import java.util.LinkedHashSet;
  */
 public class Subset {
 
+    public static int counter = 0;
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
         list.add(10);
@@ -30,21 +31,30 @@ public class Subset {
     public static ArrayList<ArrayList<Integer>> subsets(ArrayList<Integer> A) {
         ArrayList<ArrayList<Integer>> arrayLists = new ArrayList<>();
         arrayLists.add(new ArrayList<>());
+        A =  new ArrayList<>(new LinkedHashSet<>(A)) ;
+        Collections.sort(A);
         subsets(A, 0, arrayLists, new ArrayList<>());
         return arrayLists;
     }
 
     public static void subsets(
             ArrayList<Integer> A, int index,
-            ArrayList<ArrayList<Integer>> arrayLists, ArrayList<Integer> currentList) {
-        if (index == A.size()) {
+            ArrayList<ArrayList<Integer>> arrayLists, ArrayList<Integer> currentList){
+        if(index == A.size()){
+            Collections.sort(currentList);
             return;
         }
+
+
         currentList.add(A.get(index));
         arrayLists.add(new ArrayList<>(currentList));
+        System.out.println(counter++ + "   "   + currentList);
         subsets(A, index + 1, arrayLists, currentList);
         currentList.remove(currentList.size() - 1);
+
         subsets(A, index + 1, arrayLists, currentList);
+
+
 
 
     }
