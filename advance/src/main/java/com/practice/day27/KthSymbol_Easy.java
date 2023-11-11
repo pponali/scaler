@@ -2,7 +2,7 @@ package com.practice.day27;
 
 /**
  * @author prakashponali
- * @Date 19/10/23
+ * @Date 11/11/23
  * <p>
  * Problem Description On the first row, we write a 0. Now in every subsequent row, we look at the previous row and
  * replace each occurrence of 0 with 01, and each occurrence of 1 with 10.
@@ -11,9 +11,9 @@ package com.practice.day27;
  * <p>
  * <p>
  * <p>
- * Problem Constraints 1 <= A <= 105
+ * Problem Constraints 1 <= A <= 20
  * <p>
- * 0 <= B <= min(2A - 1 - 1 , 1018)
+ * 0 <= B < 2A - 1
  * <p>
  * <p>
  * <p>
@@ -47,13 +47,9 @@ package com.practice.day27;
  * <p>
  * Row 1: 0 Row 2: 01 Row 3: 0110 Row 4: 01101001
  */
-public class KthSymbolOptimized {
+public class KthSymbol_Easy {
 
-    public static void main(String[] args) {
-        System.out.println(solve(50, 99L));
-    }
-
-    public static int solve(int A, Long B) {
+    public int solve(int A, int B) {
         if (kthBit(A, B)) {
             return 1;
         } else {
@@ -61,11 +57,12 @@ public class KthSymbolOptimized {
         }
     }
 
+
     //Construct a binary tree with 1's and 0's
     //Here parent is previous row the means
     //Current row - 1 Ex: A-1
     //parent position is half of the current index. Ex: B/2
-    public static boolean kthBit(int A, Long B) {
+    public boolean kthBit(int A, int B) {
 
         if (B == 0) {
             return false;
@@ -80,5 +77,5 @@ public class KthSymbolOptimized {
             return !kthBit(A - 1, B / 2);
         }
     }
-}
 
+}

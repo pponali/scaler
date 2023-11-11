@@ -7,6 +7,47 @@ import java.util.stream.Collectors;
 /**
  * @author prakashponali
  * @Date 20/10/23
+ * <p>
+ * Problem Description Given an integer array A of size N. You have to delete one element such that the GCD(Greatest
+ * common divisor) of the remaining array is maximum.
+ * <p>
+ * Find the maximum value of GCD.
+ * <p>
+ * <p>
+ * <p>
+ * Problem Constraints 2 <= N <= 105 1 <= A[i] <= 109
+ * <p>
+ * <p>
+ * <p>
+ * Input Format First argument is an integer array A.
+ * <p>
+ * <p>
+ * <p>
+ * Output Format Return an integer denoting the maximum value of GCD.
+ * <p>
+ * <p>
+ * <p>
+ * Example Input Input 1:
+ * <p>
+ * A = [12, 15, 18] Input 2:
+ * <p>
+ * A = [5, 15, 30]
+ * <p>
+ * <p>
+ * Example Output Output 1:
+ * <p>
+ * 6 Output 2:
+ * <p>
+ * 15
+ * <p>
+ * <p>
+ * Example Explanation Explanation 1:
+ * <p>
+ * If you delete 12, gcd will be 3. If you delete 15, gcd will be 6. If you delete 18, gcd will 3. Maximum value of gcd
+ * is 6. Explanation 2:
+ * <p>
+ * If you delete 5, gcd will be 15. If you delete 15, gcd will be 5. If you delete 30, gcd will be 5. Maximum value of
+ * gcd is 15.
  */
 public class DeleteOne {
 
