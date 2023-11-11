@@ -3,6 +3,48 @@ package com.practice.day29;
 /**
  * @author prakashponali
  * @Date 23/10/23
+ * <p>
+ * Problem Description Given a positive integer A, return its corresponding column title as it appears in an Excel
+ * sheet.
+ * <p>
+ * For example:
+ * <p>
+ * 1 -> A 2 -> B 3 -> C ... 26 -> Z 27 -> AA 28 -> AB
+ * <p>
+ * <p>
+ * Problem Constraints 1 <= A <= 109
+ * <p>
+ * <p>
+ * <p>
+ * Input Format First and only argument of input contains single integer A
+ * <p>
+ * <p>
+ * <p>
+ * Output Format Return a string denoting the corresponding title.
+ * <p>
+ * <p>
+ * <p>
+ * Example Input Input 1:
+ * <p>
+ * A = 3 Input 2:
+ * <p>
+ * <p>
+ * A = 27
+ * <p>
+ * <p>
+ * Example Output Output 1:
+ * <p>
+ * "C" Output 2:
+ * <p>
+ * "AA"
+ * <p>
+ * <p>
+ * Example Explanation Explanation 1:
+ * <p>
+ * <p>
+ * 3 corrseponds to C. Explanation 2:
+ * <p>
+ * 1 -> A, 2 -> B, 3 -> C, ... 26 -> Z, 27 -> AA, 28 -> AB
  */
 
 //this problem is base 26
@@ -16,18 +58,18 @@ public class ExcelProblem {
         System.out.println(convertToTitle(980097));
     }
 
-    public static  String convertToTitle(int A){
+    public static String convertToTitle(int A) {
         StringBuilder output = new StringBuilder();
-        while(A > 0){
+        while (A > 0) {
             int mod = A % 26;
-            if(mod == 0){
-                A = (A/26) - 1;
+            if (mod == 0) {
+                A = (A / 26) - 1;
                 mod = 26;
             } else {
-                mod = A  % 26;
+                mod = A % 26;
                 A = A / 26;
             }
-            output.append((char)('A' + (mod - 1)));
+            output.append((char) ('A' + (mod - 1)));
         }
         return output.reverse().toString();
     }
@@ -35,28 +77,28 @@ public class ExcelProblem {
 
     public String titleToNumber(int A) {
         StringBuilder builder = new StringBuilder();
-        while(A > 0){
+        while (A > 0) {
             A--;
-            builder.append('A' + (A%26));
-            A/=26;
+            builder.append('A' + (A % 26));
+            A /= 26;
         }
         return builder.reverse().toString();
     }
 
-    public static String titleToNumber2(int A){
+    public static String titleToNumber2(int A) {
 
         StringBuilder builder = new StringBuilder();
-        while(A > 0){
+        while (A > 0) {
             A--;
-            builder.append((char) ('A' + (A%26)));
-            A/=26;
+            builder.append((char) ('A' + (A % 26)));
+            A /= 26;
         }
         return builder.reverse().toString();
     }
 
-    public static int titleToNumber3(String A){
+    public static int titleToNumber3(String A) {
         int result = 0;
-        for(int i = 0; i < A.length(); i++){
+        for (int i = 0; i < A.length(); i++) {
             result = result * 26 + (A.charAt(i) - 'A' + 1);
         }
         return result;
@@ -68,13 +110,13 @@ public class ExcelProblem {
     // C(n, r) = C(n-1, r-1) + C(n-1, r)
     // C(n, r) = C(n, n-r)
     // mod of C(n, r) = C(n, r) %
-    public static int modOfMforNcr(int m, int n, int r){
+    public static int modOfMforNcr(int m, int n, int r) {
 
-    	if(n < r)
+        if (n < r)
             return -1;
         int numerator = 0;//nCrModp(n, r, m);
         int denominator = 1;
-        for(int i = 1; i <= r; i++)
+        for (int i = 1; i <= r; i++)
             denominator = denominator * i % m;
         return (numerator * moduloInverse(denominator, m)) % m;
     }
@@ -83,34 +125,33 @@ public class ExcelProblem {
         return 0;//return power(denominator, m - 2, m); // (denominator^-1) % m = (denominator^(m-2)) % m
     }
 
-    public int nCrModp(int n, int r, int p)
-    {
+    public int nCrModp(int n, int r, int p) {
         // p needs to be greater
         // than
         // n+r
-        int C[] = new int[r+1];
+        int C[] = new int[r + 1];
         C[0] = 1;
-        for (int i = 1; i <= n; i++)
-        {
+        for (int i = 1; i <= n; i++) {
             for (int j = Math.min(i, r); j > 0; j--)
-                C[j] = (C[j] + C[j-1])%p;
+                C[j] = (C[j] + C[j - 1]) % p;
         }
         return C[r]; // C[r] contains nCR % p;
     }
+
     public static int moduloOfFraction(int A, int B) {
-        if(B == 0){
+        if (B == 0) {
             return -1;
         }
-        if(A == 0){
+        if (A == 0) {
             return 0;
         }
-        if(A < 0){
+        if (A < 0) {
             A = A * -1;
         }
-        if(B < 0){
+        if (B < 0) {
             B = B * -1;
         }
-        if(A < B){
+        if (A < B) {
             return A;
         }
         A = A - B;

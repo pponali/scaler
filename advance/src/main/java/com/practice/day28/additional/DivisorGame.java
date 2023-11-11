@@ -1,27 +1,65 @@
-package com.practice.day28;
+package com.practice.day28.additional;
 
 /**
  * @author prakashponali
  * @Date 23/10/23
+ * <p>
+ * Problem Description Scooby has 3 three integers A, B, and C.
+ * <p>
+ * Scooby calls a positive integer special if it is divisible by B and it is divisible by C. You need to tell the number
+ * of special integers less than or equal to A.
+ * <p>
+ * <p>
+ * <p>
+ * Problem Constraints 1 <= A, B, C <= 109
+ * <p>
+ * <p>
+ * <p>
+ * Input Format First argument is a positive integer A Second argument is a positive integer B Third argument is a
+ * positive integer C
+ * <p>
+ * <p>
+ * <p>
+ * Output Format One integer corresponding to the number of special integers less than or equal to A.
+ * <p>
+ * <p>
+ * <p>
+ * Example Input Input 1:
+ * <p>
+ * A = 12 B = 3 C = 2 Input 2:
+ * <p>
+ * A = 6 B = 1 C = 4
+ * <p>
+ * <p>
+ * Example Output Output 1:
+ * <p>
+ * 2 Output 2:
+ * <p>
+ * 1
+ * <p>
+ * <p>
+ * Example Explanation Explanation 1:
+ * <p>
+ * The two integers divisible by 2 and 3 and less than or equal to 12 are 6,12. Explanation 2:
+ * <p>
+ * Only 4 is a positive integer less than equal to 6 which is divisible by 1 and 4.
  */
 public class DivisorGame {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         int A = 24, B = 3, C = 4;
         System.out.println(divisorGame(A, B, C));
-
 
 
     }
 
     private static int divisorGame(final int A, final int B, final int C) {
         int lcm = (A * B) / gcd(A, B);
-        while(lcm > 0 && lcm % C != 0){
+        while (lcm > 0 && lcm % C != 0) {
             lcm = lcm - 1;
         }
-            return lcm;
+        return lcm;
     }
-
 
 
     //euclidean theorem algorithm for gcd for two numbers
@@ -46,7 +84,6 @@ public class DivisorGame {
             return b;
         return gcd(b % a, a); // recursion
     }
-
 
 
     //algorithm for co-prime numbers
