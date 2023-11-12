@@ -5,21 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="428f5be3-9974-49b0-883d-0ada41172805" name="Changes" comment="code refactoring">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/redis-manager-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/day28/additional/Mod_Sum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/day29/Pascal_Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/day29/additional/Compute_nCr_mod_m.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/day29/additional/Excel_Column_Number.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/day29/additional/Sorted_Permutation_Rank.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/advance/src/main/java/com/practice/day28/DivisorGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/day28/additional/DivisorGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/advance/src/main/java/com/practice/day29/ExcelProblem.java" beforeDir="false" afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/day29/ExcelProblem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/day27/AllPermutationsOfWord.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/day30/additional/Lucky_Numbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/day30/practice/PrimeNumbers.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/day30/practice/SmallestPrime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/sort/Towers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/advance/src/main/java/com/practice/day32/additional/CheckPairSum.java" beforeDir="false" afterPath="$PROJECT_DIR$/advance/src/main/java/com/practice/day32/CheckPairSum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,20 +66,20 @@
       <recent name="$PROJECT_DIR$/advance/src/main/java/com/practice/day26" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.practice.day32" />
+      <recent name="com.practice.day30.practice" />
       <recent name="com.practice.day28.additional" />
       <recent name="com.practice.day26.additional" />
       <recent name="com.practice.day28.practice" />
-      <recent name="com.practice.day26.practice" />
-      <recent name="com.practice.day26.additional.practice" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Sorted_Permutation_Rank">
-    <configuration name="Closest_pair_from_sorted_arrays" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.practice.day38.Closest_pair_from_sorted_arrays" />
+  <component name="RunManager" selected="Application.AllPermutationsOfWord">
+    <configuration name="AllPermutationsOfWord" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.practice.day27.AllPermutationsOfWord" />
       <module name="advance" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.practice.day38.*" />
+          <option name="PATTERN" value="com.practice.day27.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,12 +87,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Compute_nCr_mod_m" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.practice.day29.additional.Compute_nCr_mod_m" />
+    <configuration name="Lucky_Numbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.practice.day30.additional.Lucky_Numbers" />
       <module name="advance" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.practice.day29.additional.*" />
+          <option name="PATTERN" value="com.practice.day30.additional.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +100,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Excel_Column_Number" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.practice.day29.additional.Excel_Column_Number" />
+    <configuration name="PrimeNumbers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.practice.day30.practice.PrimeNumbers" />
       <module name="advance" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.practice.day29.additional.*" />
+          <option name="PATTERN" value="com.practice.day30.practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -121,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pairs_with_given_sum_II" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.practice.day38.Pairs_with_given_sum_II" />
+    <configuration name="SmallestPrime" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.practice.day30.practice.SmallestPrime" />
       <module name="advance" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.practice.day38.*" />
+          <option name="PATTERN" value="com.practice.day30.practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -134,12 +126,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Sorted_Permutation_Rank" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.practice.day29.additional.Sorted_Permutation_Rank" />
+    <configuration name="Towers" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.practice.sort.Towers" />
       <module name="advance" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.practice.day29.additional.*" />
+          <option name="PATTERN" value="com.practice.sort.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Sorted_Permutation_Rank" />
-        <item itemvalue="Application.Compute_nCr_mod_m" />
-        <item itemvalue="Application.Excel_Column_Number" />
-        <item itemvalue="Application.Closest_pair_from_sorted_arrays" />
-        <item itemvalue="Application.Pairs_with_given_sum_II" />
+        <item itemvalue="Application.AllPermutationsOfWord" />
+        <item itemvalue="Application.Towers" />
+        <item itemvalue="Application.Lucky_Numbers" />
+        <item itemvalue="Application.PrimeNumbers" />
+        <item itemvalue="Application.SmallestPrime" />
       </list>
     </recent_temporary>
   </component>
@@ -183,7 +175,7 @@
       <workItem from="1699419913111" duration="142000" />
       <workItem from="1699420081803" duration="1063000" />
       <workItem from="1699423317445" duration="679000" />
-      <workItem from="1699524910290" duration="42631000" />
+      <workItem from="1699524910290" duration="56815000" />
     </task>
     <task id="LOCAL-00001" summary="refactoring">
       <option name="closed" value="true" />
@@ -225,7 +217,15 @@
       <option name="project" value="LOCAL" />
       <updated>1699695674929</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="code refactoring">
+      <option name="closed" value="true" />
+      <created>1699702108282</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1699702108282</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -339,6 +339,26 @@
           <url>file://$PROJECT_DIR$/advance/src/main/java/com/practice/day29/additional/Excel_Column_Number.java</url>
           <line>51</line>
           <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/advance/src/main/java/com/practice/day30/practice/SmallestPrime.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/advance/src/main/java/com/practice/day30/additional/Lucky_Numbers.java</url>
+          <line>54</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/advance/src/main/java/com/practice/day30/additional/Lucky_Numbers.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/advance/src/main/java/com/practice/sort/Towers.java</url>
+          <line>16</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

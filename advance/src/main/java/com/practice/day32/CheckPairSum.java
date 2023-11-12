@@ -1,4 +1,4 @@
-package com.practice.day32.additional;
+package com.practice.day32;
 
 import java.util.HashSet;
 
