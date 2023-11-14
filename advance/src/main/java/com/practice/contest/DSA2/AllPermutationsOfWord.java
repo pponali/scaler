@@ -1,4 +1,4 @@
-package com.practice.day27;
+package com.practice.contest.DSA2;
 
 import java.util.ArrayList;
 
@@ -10,7 +10,9 @@ import java.util.ArrayList;
 public class AllPermutationsOfWord {
     public static void main(String[] args) {
         char[] chars = new char[]{'c','d','r','p'};
-        System.out.println(generatePermutations(chars, 0 , new ArrayList<String>(), "cdrasdfasdf asdfadsf"));
+        ArrayList<String> finalList = new ArrayList<>();
+        generatePermutations(chars, 0 , finalList);
+        System.out.println(finalList);
         AllPermutationsOfWord allPermutationsOfWord = new AllPermutationsOfWord();
         allPermutationsOfWord.allPermutationsOfWord(new ArrayList<>(new ArrayList<>()), null, 0, "asdfadsfasd", "fas");
     }
@@ -25,19 +27,16 @@ public class AllPermutationsOfWord {
 
     }
 
-    public static boolean generatePermutations(char[] chars, int idx, ArrayList<String > list, String searchContext){
+    public static void generatePermutations(char[] chars, int idx, ArrayList<String > list){
         if(idx == chars.length - 1){
             list.add(new String(chars));
-            System.out.println(list);
-            return searchContext.contains(new String(chars));
+            return;
         }
-        boolean found = false;
         for(int i = idx; i < chars.length; i++){
             swap(chars, idx, i);
-            found = found || generatePermutations(chars, idx+1, list, searchContext);
+            generatePermutations(chars, idx+1, list);
             swap(chars, idx, i);
         }
-        return found;
     }
 
 

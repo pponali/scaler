@@ -1,4 +1,4 @@
-package com.practice.sort;
+package com.practice.contest.DSA2;
 
 /**
  * @Author prakashponali
