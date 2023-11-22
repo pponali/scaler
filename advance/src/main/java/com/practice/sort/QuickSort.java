@@ -9,7 +9,7 @@ import java.util.Arrays;
 public class QuickSort {
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(quickSort(new int[]{4, 5, 23, 5, 6, 2, 5, 7, 8, 212, 6, 3})));
+        System.out.println(Arrays.toString(mergeSort(new int[]{4, 5, 23, 5, 6, 2, 5, 7, 8, 212, 6, 3})));
     }
 
     // Time complexity: O(nlogn)
@@ -75,7 +75,7 @@ public class QuickSort {
      * @param ints - unsorted array
      * @return - sorted array
      */
-    private static int[] quickSort(int[] ints) {
+    private static int[] mergeSort(int[] ints) {
         // Base case
         if (ints.length <= 1) {
             return ints;
@@ -92,7 +92,7 @@ public class QuickSort {
                 right[j++] = ints[k];
             }
         }
-        return merge(quickSort(left), quickSort(right));
+        return merge(mergeSort(left), mergeSort(right));
     }
 
 
