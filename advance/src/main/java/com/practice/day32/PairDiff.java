@@ -1,4 +1,4 @@
-package com.practice.sort;
+package com.practice.day32;
 
 import java.util.HashMap;
 

@@ -17,6 +17,13 @@ target/
 *.iws
 *.iml
 *.ipr
+.idea/consolestorage/flexible_search_region.json
+.idea/consolestorage/solr_region.json
+.idea/aws.xml
+.idea/dataSources.local.xml
+.idea/dataSources.xml
+.idea/hybrisProjectSettings.xml
+.idea/*
 
 ### Eclipse ###
 .apt_generated

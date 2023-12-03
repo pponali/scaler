@@ -53,7 +53,7 @@ public class BobbleSort {
      *  5. [4, 5, 5, 6, 2, 3, 7, 8, 212, 6, 23, 5]
      *
      */
-    private static int[] bubbleSort(int[] ints) {
+    public static int[] bubbleSort(int[] ints) {
         for (int i = 0; i < ints.length; i++) {
             for (int j = 0; j < ints.length - i - 1; j++) {
                 if (ints[j] > ints[j + 1]) {

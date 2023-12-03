@@ -58,7 +58,7 @@ public class SelectionSort {
      * @param A
      * @return
      */
-    private static int[] selectionSort(int[] A) {
+    public static int[] selectionSort(int[] A) {
 
         for(int i = 0; i < A.length; i++){
             int minIndex = i;

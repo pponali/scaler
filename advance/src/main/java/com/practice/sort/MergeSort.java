@@ -78,7 +78,7 @@ public class MergeSort {
      *
      *
      */
-    private static int[] margeSort(int[] ints) {
+    public static int[] margeSort(int[] ints) {
         int n = ints.length;
         if(n < 2) return ints;
         int mid = n / 2;

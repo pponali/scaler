@@ -75,7 +75,7 @@ public class QuickSort {
      * @param ints - unsorted array
      * @return - sorted array
      */
-    private static int[] mergeSort(int[] ints) {
+    public static int[] mergeSort(int[] ints) {
         // Base case
         if (ints.length <= 1) {
             return ints;
