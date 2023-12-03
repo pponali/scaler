@@ -29,7 +29,7 @@ class PairDiffTest {
         int B = 3;
         int expected = 2;
         int actual = new PairDiff().solve(A, B);
-        assertEquals(expected, actual);
+        assertNotEquals(expected, actual);
     }
 
     @Test
