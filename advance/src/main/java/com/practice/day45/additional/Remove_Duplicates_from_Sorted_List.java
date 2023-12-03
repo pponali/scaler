@@ -48,4 +48,29 @@ package com.practice.day45.additional;
  *  Each element appear only once in 1->2.
  */
 public class Remove_Duplicates_from_Sorted_List {
+
+
+    public ListNode deleteDuplicates(ListNode A) {
+        if(A == null || A.next == null) return A;
+        ListNode current = A;
+        ListNode pre = A;
+        while(current != null){
+            if(pre.val != current.val){
+                pre.next = current;
+                pre = current;
+            }
+            current = current.next;
+        }
+        pre.next = null;
+        return A;
+    }
+
+    static class ListNode {
+        public int val;
+        public ListNode next;
+        ListNode(int x) {
+            val = x;
+            next = null;
+        }
+    }
 }

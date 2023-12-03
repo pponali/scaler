@@ -55,18 +55,6 @@ package com.practice.day45;
  *  The linked list consists of only a single node. After reversing it, the list becomes : 3 -> NULL
  */
 public class Reverse_Linked_List {
-    public static void main(String[] args) {
-        ListNode head = new ListNode(1);
-        head.next = new ListNode(2);
-        head.next.next = new ListNode(3);
-        head.next.next.next = new ListNode(4);
-        head.next.next.next.next = new ListNode(5);
-        ListNode newHead = reverseList(head);
-        while (newHead != null) {
-            System.out.print(newHead.val + " ");
-            newHead = newHead.next;
-        }
-    }
 
     public static ListNode reverseList(ListNode head) {
         if (head == null || head.next == null) {
