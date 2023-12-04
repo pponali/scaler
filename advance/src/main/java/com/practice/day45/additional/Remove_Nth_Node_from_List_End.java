@@ -1,5 +1,7 @@
 package com.practice.day45.additional;
 
+import lombok.extern.slf4j.Slf4j;
+
 /**
  * @Author prakashponali
  * @Date 03/12/23
@@ -42,5 +44,55 @@ package com.practice.day45.additional;
  * Explanation 2:
  * In the second example, 1 is the first and the last element.
  */
+
+@Slf4j
 public class Remove_Nth_Node_from_List_End {
+
+
+    public static Node removeNthNode(Node head, int k) {
+        // remove k th node from the end of the list
+        int length = 0;
+        Node curr = head;
+        while(curr != null){
+            length++;
+            curr = curr.next;
+        }
+        int index = length - k;
+        curr = head;
+        int count = 0;
+        while(curr != null){
+            if(count == index){
+                curr.next = curr.next.next;
+            }
+            count++;
+            curr = curr.next;
+        }
+        return head;
+    }
+
+    public static void printList(Node head) {
+        while(head != null){
+            log.info(head + " ");
+            head =  head.next;
+        }
+
+    }
+
+    public static class Node{
+        int val;
+        Node next = null;
+
+        public Node(int i) {
+            val = i;
+        }
+
+        @Override
+        public String toString() {
+            return "Node{" +
+                    "val=" + val +
+                    ", next=" + next +
+                    '}';
+        }
+
+    }
 }

@@ -17,15 +17,11 @@ public class Towers {
         while (i < A.length) {
             int cost1 = 0;
             if(i + 1 < A.length){
-
                 cost1 = B * (A[i + 1] + A[i]);
-
             }
             int cost2 = 0;
             if(i + 2 < A.length){
-
                 cost2 = C * (A[i + 2] + A[i]);
-
             }
             if (cost1 < cost2) {
                 i++;
