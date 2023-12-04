@@ -13,9 +13,9 @@ public class MergeOverlappingIntervals {
         //intervalList.forEach(System.out::println);
         ArrayList<Interval> newList = new ArrayList<>(intervalList);
         newList.add(5, new Interval(4, 4));
-        newList.forEach(System.out::println);
+        //newList.forEach(System.out::println);
         System.out.println("-=========");
-        mergeList(newList).forEach(System.out::println);
+        mergeList(newList).stream().toArray();
 
         /*ArrayList<Interval> intervalList = new ArrayList<>();
         intervalList.add(new Interval(4,4));

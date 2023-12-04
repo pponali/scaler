@@ -10,7 +10,7 @@ import java.util.HashMap;
 public class CountOfDivisors {
     int[] smallestPrimeFactors = new int[1004];
     /**
-     * @param args
+     * @param args - args
      */
     public static void main(String[] args) {
         CountOfDivisors count = new CountOfDivisors();
@@ -29,8 +29,8 @@ public class CountOfDivisors {
     }
 
     /**
-     * @param n
-     * @return
+     * @param n - n
+     * @return - boolean
      */
     public static boolean isPrime(int n) {
         for (int i = 2; i * i < n; i++) {
@@ -45,12 +45,11 @@ public class CountOfDivisors {
     /**
      * check prime numbers in a range
      *
-     * @param B
-     * @return
+     * @param B - Input
+     * @return - calculated prime numbers
      */
     public static boolean[] howManyPrimeNumber(int B) {
         boolean[] primes = new boolean[B + 1];
-
         primes[0] = primes[1] = true;
 
         Arrays.fill(primes, true);
@@ -147,6 +146,20 @@ public class CountOfDivisors {
 
         });
         return count[0];
+    }
+
+    public  int numberOfFactorsForNumber(int A){
+        // number of factors for a number is the product of the number of factors for each prime factor of the number
+        // code for calculating the number of factors for a number is given below
+
+        int number = A;
+        int numberOfFactors = 1;
+        while(number > 1){
+            int smallestPrimeFactor = smallestPrimeFactors[number];
+            numberOfFactors = numberOfFactors * (smallestPrimeFactor + 1);
+            number = number / smallestPrimeFactor;
+        }
+        return numberOfFactors;
     }
 
     public int[] solve(int[] A) {
