@@ -16,15 +16,15 @@ import static org.junit.jupiter.api.Assertions.*;
 @Slf4j
 class Remove_Nth_Node_from_List_EndTest {
 
-    Remove_Nth_Node_from_List_End.Node head = null;
+    Remove_Nth_Node_from_List_End.ListNode head = null;
     @BeforeEach
     void setUp() {
         log.info("Before Each");
-        head = new Remove_Nth_Node_from_List_End.Node(1);
-        head.next = new Remove_Nth_Node_from_List_End.Node(2);
-        head.next.next = new Remove_Nth_Node_from_List_End.Node(3);
-        head.next.next.next = new Remove_Nth_Node_from_List_End.Node(4);
-        head.next.next.next.next = new Remove_Nth_Node_from_List_End.Node(5);
+        head = new Remove_Nth_Node_from_List_End.ListNode(1);
+        head.next = new Remove_Nth_Node_from_List_End.ListNode(2);
+        head.next.next = new Remove_Nth_Node_from_List_End.ListNode(3);
+        head.next.next.next = new Remove_Nth_Node_from_List_End.ListNode(4);
+        head.next.next.next.next = new Remove_Nth_Node_from_List_End.ListNode(5);
     }
 
     @AfterEach
@@ -33,8 +33,20 @@ class Remove_Nth_Node_from_List_EndTest {
     }
 
     @Test
-    void removeNthNode() {
+    void removeNthNodeLast() {
         head = Remove_Nth_Node_from_List_End.removeNthNode(head, 2);
+        Remove_Nth_Node_from_List_End.printList(head);
+    }
+
+    @Test
+    void removeNthNode() {
+        head = Remove_Nth_Node_from_List_End.removeNthNode(head, 1);
+        Remove_Nth_Node_from_List_End.printList(head);
+    }
+
+    @Test
+    void removeFirstNode() {
+        head = Remove_Nth_Node_from_List_End.removeNthNode(head, 5);
         Remove_Nth_Node_from_List_End.printList(head);
     }
 }
