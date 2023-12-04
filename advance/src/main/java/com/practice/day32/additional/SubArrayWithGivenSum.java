@@ -10,7 +10,7 @@ public class SubArrayWithGivenSum {
         System.out.println(Arrays.toString(subArrayWithGivenSum.solve(new int[]{1, 2, 3, 4, 5}, 5)));
     }
     public int[] solve(int[] A, int B) {
-        int s = 0, e = 0, prefix = 0;
+        int prefix = 0;
         int[] ans = new int[2];
         HashMap<Integer, Integer> map = new HashMap<>();
         for(int i = 0; i < A.length; i++){

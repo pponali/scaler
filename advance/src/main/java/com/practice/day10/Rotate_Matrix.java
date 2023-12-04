@@ -98,7 +98,6 @@ public class Rotate_Matrix {
 
     public int[][] reverse(int[][] A) {
         for (int i = 0; i < A.length; i++) {
-            int j = 0, k = A.length - 1;
             swapRow(A, i);
         }
         return A;

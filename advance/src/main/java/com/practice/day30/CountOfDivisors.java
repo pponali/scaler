@@ -143,7 +143,7 @@ public class CountOfDivisors {
         final int[] count = {1};
         map.values().forEach(integer -> {
             count[0] = count[0] * (integer + 1);
-            int sum = map.values().stream().map(value -> value + 1).mapToInt(Integer::intValue).sum();
+            map.values().stream().map(value -> value + 1).mapToInt(Integer::intValue).sum();
 
         });
         return count[0];

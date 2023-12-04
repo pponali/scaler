@@ -54,6 +54,7 @@ public class Equilibrium_index_of_an_array {
 
     public static void main(String[] args) {
         Equilibrium_index_of_an_array equilibriumIndexOfAnArray = new Equilibrium_index_of_an_array();
+        System.out.println(equilibriumIndexOfAnArray.equilibriumIndexOfAnArray(new int[]{3,5,3,2,5,2,4,2,4,2,5,2,6,67,87,4,4,57,78,5,77,}));
     }
 
     public int equilibriumIndexOfAnArray(int[] A) {

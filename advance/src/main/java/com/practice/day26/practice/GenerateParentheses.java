@@ -1,7 +1,6 @@
 package com.practice.day26.practice;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class GenerateParentheses {
 

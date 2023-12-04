@@ -32,7 +32,6 @@ public class SumOfNonNegative {
     public static int[] solve(int[] A, int[][] B) {
         int[] profit  = new int[B.length];
 
-        HashSet set = new HashSet<>();
         //set.add()
         for(int i = 0; i < B.length; i++){
             int count = 0;
@@ -48,12 +47,12 @@ public class SumOfNonNegative {
 
     //find common elements in two arrays
     public static int[] findMu(int[] A, int[] B){
-        HashSet<Integer> set = new HashSet();
+        HashSet<Integer> set = new HashSet<>();
         for(int i = 0; i < A.length; i++)
         {
             set.add(A[i]);
         }
-        HashSet<Integer> commonset = new HashSet();
+        HashSet<Integer> commonset = new HashSet<>();
         for(int i = 0; i < B.length; i++)
         {
             if(set.contains(B[i])){

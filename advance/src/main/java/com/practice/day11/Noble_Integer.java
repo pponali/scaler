@@ -63,7 +63,7 @@ public class Noble_Integer {
         if(A[A.length - 1] == 0) {
             return 1;
         }
-        int ans = 0, ce = 0;
+        int ce = 0;
         for(int i = A.length - 2; i >= 0; i--) {
             if(A[i] != A[i + 1]) {
                 ce = i;

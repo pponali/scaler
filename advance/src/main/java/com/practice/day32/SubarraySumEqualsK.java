@@ -1,7 +1,6 @@
 package com.practice.day32;
 
 import java.util.HashMap;
-import java.util.HashSet;
 
 public class SubarraySumEqualsK {
     public static void main(String[] args) {

@@ -1,7 +1,5 @@
 package com.practice.day6.additional;
 
-import com.practice.day4.Count_Factors_2;
-
 /**
  * @Author prakashponali
  * @Date 13/11/23

@@ -7,7 +7,7 @@ package com.practice.day21;
 public class NumberOf1sinNumber {
     public static void main(String[] args) {
         int A = 17;
-        int count = 0;int i = 1;int temp = 0;
+        int count = 0;
 
         while(A > 0){
             if((A & 1) != 0){

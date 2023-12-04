@@ -12,8 +12,6 @@ public class Palendrom {
     }
 
         public boolean solve(String A) {
-            int length = 0;
-
             if(A.length() % 2 == 0)
                 return isPalindrome(A, A.length()/2 - 1, A.length()/2);
             else {
@@ -22,8 +20,6 @@ public class Palendrom {
 
         }
         boolean isPalindrome(String A, int left, int right){
-
-            boolean isPalindrome = false;
 
             if(left == 0 && right == A.length() -1){
                 if(A.charAt(left) == A.charAt(right))

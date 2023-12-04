@@ -2,7 +2,6 @@ package com.practice.day31;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 
 public class PrimeNumbersFromNtoM {
 

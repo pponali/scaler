@@ -46,10 +46,8 @@ public class SourceLinkeList {
     public static void delete_node(int position) {
         // @params position, integer
         if (position >= 1 && position <= size_of_ll) {
-            node temp = null;
             // remove at head
             if (position == 1) {
-                temp = root;
                 root = root.next;
             } else {
                 int count = 1;
@@ -59,7 +57,6 @@ public class SourceLinkeList {
                     prev = prev.next;
                     count++;
                 }
-                temp = prev.next;
                 prev.next = prev.next.next;
             }
             size_of_ll--;

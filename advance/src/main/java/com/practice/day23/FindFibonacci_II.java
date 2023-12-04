@@ -3,7 +3,6 @@ package com.practice.day23;
 public class FindFibonacci_II {
 
     public static void main(String[] args) {
-        FindFibonacci_II findFibonacciIi = new FindFibonacci_II();
         System.out.println(findFib(10));
 
     }

@@ -47,6 +47,7 @@ public class Special_Subsequences_AG {
 
     public static void main(String[] args) {
         Special_Subsequences_AG specialSubsequencesAg = new Special_Subsequences_AG();
+        System.out.println(specialSubsequencesAg.specialSubsequencesAg("asdjflk;asdjfasdifowierjioe"));
 
     }
 

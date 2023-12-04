@@ -1,6 +1,8 @@
 package com.practice.contest.DSA2;
 
 /**
+ * @Classname MaxProductOfThree
+ *
  * @Author prakashponali
  * @Date 12/11/23
  * @Description
@@ -11,8 +13,6 @@ import java.util.Map;
 
 public class MaxProductOfThree {
     public static int maxProduct(int[] nums) {
-        int n = nums.length;
-
         // Initialize the hash table to store two smallest and three largest numbers
         Map<Integer, Integer> smallest = new HashMap<>();
         Map<Integer, Integer> largest = new HashMap<>();

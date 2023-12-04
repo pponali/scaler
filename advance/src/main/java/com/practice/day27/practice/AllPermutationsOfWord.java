@@ -1,7 +1,6 @@
 package com.practice.day27.practice;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * @Author prakashponali

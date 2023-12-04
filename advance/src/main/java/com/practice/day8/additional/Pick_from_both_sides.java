@@ -59,6 +59,7 @@ public class Pick_from_both_sides {
 
     public static void main(String[] args) {
         Pick_from_both_sides pickFromBothSides = new Pick_from_both_sides();
+        System.out.println(pickFromBothSides.pickFromBothSides(new int[]{3,5,2,6,7,3,6,2,1,5,126,7,3,2}, 10));
 
     }
 

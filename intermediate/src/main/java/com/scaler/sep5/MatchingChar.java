@@ -14,7 +14,7 @@ public class MatchingChar {
         //str1 = abcd , str2=abad ,
         char[] s1 = A.toCharArray();
         char[] s2 = B.toCharArray();
-        HashSet set = new HashSet();
+        HashSet<Character> set = new HashSet<>();
         int count = 0;
         for(char ch1 : s1) {
             for(char ch2 : s2) {

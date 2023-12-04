@@ -8,7 +8,7 @@ public class ContinuousSumQuery {
 
     public static void main(String[] args) {
         int[][] arr = new int[][]{{1,2,10},{2,3,20},{2,5,25}};
-        int[] result = new ContinuousSumQuery().continuousSumQuery(5, arr);
+        System.out.println(new ContinuousSumQuery().continuousSumQuery(5, arr));
     }
 
     private int[] continuousSumQuery(final int A, final int[][] B) {
