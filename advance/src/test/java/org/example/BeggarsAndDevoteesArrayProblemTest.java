@@ -5,21 +5,15 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * @Author prakashponali
+ * @Author Prakash Ponali(@pponali)
  * @Date 03/12/23
  * @Description
  */
-class BeggersAndDivotessArrayProblemTest {
-
+class BeggarsAndDevoteesArrayProblemTest {
     @BeforeEach
     void setUp() {
     }
-
     @AfterEach
     void tearDown() {
-    }
-
-    @Test
-    void main() {
     }
 }
