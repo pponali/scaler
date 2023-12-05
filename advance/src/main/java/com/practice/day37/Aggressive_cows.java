@@ -11,8 +11,8 @@ public class Aggressive_cows {
         int[] ints = new int[]{82,61,38,88,12,7,6,12,48,8,31,90,35,5,88,2,66,19,5,96,84,95};
         List<Integer> list = new ArrayList<>(IntStream.of(ints).boxed().toList());
         int max = 0;
-        for(int i = 0; i < list.size(); i++){
-            max = Math.max(max, list.get(i));
+        for (Integer integer : list) {
+            max = Math.max(max, integer);
         }
 
         Collections.sort(list);

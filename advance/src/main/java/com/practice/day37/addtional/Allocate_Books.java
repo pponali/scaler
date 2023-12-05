@@ -9,7 +9,6 @@ public class Allocate_Books {
         int[] ints = new int[]{};
         int B = 7;
         ArrayList<Integer> list = new ArrayList<>(IntStream.of(ints).boxed().toList());
-
         System.out.println(allocateBooks.solve(list, B));
     }
 

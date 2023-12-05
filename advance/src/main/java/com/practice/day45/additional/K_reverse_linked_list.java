@@ -102,6 +102,7 @@ public class K_reverse_linked_list {
         while (head != null) {
             System.out.print(head.val + " ");
             head = head.next;
+            System.out.println();
         }
     }
 }
