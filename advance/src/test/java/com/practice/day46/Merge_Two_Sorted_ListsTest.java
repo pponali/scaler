@@ -31,8 +31,8 @@ class MergeTwoSortedListsTest {
         l2 = null;
         System.gc();
         System.out.println("After GC");
-        l1.printList(l1);
-        l2.printList(l2);
+    //        l1.printList(l1);
+    //        l2.printList(l2);
     }
 
     @Test

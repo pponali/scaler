@@ -6,65 +6,116 @@ import lombok.extern.slf4j.Slf4j;
  * @Author prakashponali
  * @Date 04/12/23
  * @Description
+ * Merge two sorted linked lists, A and B, and return it as a new list.
+ *
+ * The new list should be made by splicing together the nodes of the first two lists and should also be sorted.
+ *
+ *
+ *
+ * Problem Constraints
+ * 0 <= |A|, |B| <= 105
+ *
+ *
+ *
+ * Input Format
+ * The first argument of input contains a pointer to the head of linked list A.
+ *
+ * The second argument of input contains a pointer to the head of linked list B.
+ *
+ *
+ *
+ * Output Format
+ * Return a pointer to the head of the merged linked list.
+ *
+ *
+ *
+ * Example Input
+ * Input 1:
+ *
+ *  A = 5 -> 8 -> 20
+ *  B = 4 -> 11 -> 15
+ * Input 2:
+ *
+ *  A = 1 -> 2 -> 3
+ *  B = Null
+ *
+ *
+ * Example Output
+ * Output 1:
+ *
+ *  4 -> 5 -> 8 -> 11 -> 15 -> 20
+ * Output 2:
+ *
+ *  1 -> 2 -> 3
+ *
+ *
+ * Example Explanation
+ * Explanation 1:
+ *
+ *  Merging A and B will result in 4 -> 5 -> 8 -> 11 -> 15 -> 20
+ * Explanation 2:
+ *
+ *  We don't need to merge as B is empty.
+ *
  */
 
 @Slf4j
 public class Merge_Two_Sorted_Lists {
 
-    public ListNode mergeTwoSortedList(ListNode  l1, ListNode l2){
-        if(l1 == null) return l2;
-        if(l2 == null) return l1;
+    public ListNode mergeTwoSortedList(ListNode  A, ListNode B){
+        if(A == null) return B;
+        if(B == null) return A;
         ListNode head;
         ListNode tail;
 
-        if(l1.val < l2.val){
-            head = l1;
-            tail = l1;
-            l1 = l1.next;
+        if(A.val < B.val){
+            head = A;
+            tail = A;
+            A = A.next;
         } else {
-            head = l2;
-            tail = l2;
-            l2 = l2.next;
+            head = B;
+            tail = B;
+            B = B.next;
         }
-        while(l1 != null && l2 != null){
-            if(l1.val < l2.val){
-                tail.next = l1;
-                l1 = l1.next;
+        while(A != null && B != null){
+            if(A.val < B.val){
+                tail.next = A;
+                A = A.next;
             } else {
-                tail.next = l2;
-                l2 = l2.next;
+                tail.next = B;
+                B = B.next;
             }
             tail = tail.next;
         }
-        tail.next = l1 == null ? l2 : l1;
+        tail.next = A == null ? B : A;
 
         return head;
 
-        /*if(l1 == null) return l2;
-        if(l2 == null) return l1;
+        /*if(A == null) return l2;
+        if(l2 == null) return A;
 
-        if(l1.val < l2.val){
-            l1.next = mergeTwoSortedList(l1.next,l2);
-            return l1;
+        if(A.val < l2.val){
+            A.next = mergeTwoSortedList(A.next,l2);
+            return A;
         }else{
-            l2.next = mergeTwoSortedList(l1,l2.next);
+            l2.next = mergeTwoSortedList(A,l2.next);
             return l2;
         }*/
 
 
         /*ListNode dummy = new ListNode(0);
         ListNode curr = dummy;
-        while(l1 != null && l2 != null){
-            if(l1.val < l2.val){
-                curr.next = l1;
-                l1 = l1.next;
+        while(A != null && l2 != null){
+            if(A.val < l2.val){
+                curr.next = A;
+                A = A.next;
             }else{
                 curr.next = l2;
                 l2 = l2.next;
             }
             curr = curr.next;
         }
-        curr.next = l1 == null ? l2 : l1;
+        curr.next = A == null ? l2 : A;
         return dummy.next;*/
 
     }
