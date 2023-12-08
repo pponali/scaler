@@ -20,7 +20,7 @@ public class SumOfEvenAndOdd {
         int[] prefixodd = new int[A.length];
         prefixodd[0] = 0;
         for(int i = 1; i < A.length; i++) {
-            if(i % 2 == 1) {
+            if((i & 1) == 1) {
                 prefixodd[i] = prefixodd[i - 1] + A[i];
             } else {
                 prefixodd[i] = prefixodd[i - 1];

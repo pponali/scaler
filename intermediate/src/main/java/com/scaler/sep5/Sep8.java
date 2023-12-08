@@ -1,4 +1,4 @@
 package com.scaler.sep5;
 
-public class sep8 {
+public class Sep8 {
 }

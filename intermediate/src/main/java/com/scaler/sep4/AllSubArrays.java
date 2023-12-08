@@ -1,9 +1,11 @@
 package com.scaler.sep4;
 
+import java.util.Arrays;
+
 public class AllSubArrays {
 
     public static void main(String[] args) {
-        System.out.println(allSubArrays(new int[]{36,63,63,26,87,28,77,93,7}));
+        System.out.println(Arrays.deepToString(allSubArrays(new int[]{36, 63, 63, 26, 87, 28, 77, 93, 7})));
     }
     public static int[][] allSubArrays(int[] A) {
 

@@ -1,6 +1,7 @@
 package com.practice.day46;
 
-import com.practice.day46.SortList.ListNode;
+import com.practice.module6.day46.SortList;
+import com.practice.module6.day46.SortList.ListNode;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -22,10 +23,10 @@ class SortListTest {
 
         ListNode mid = sortList.findMid(head);
         System.out.println(mid.val);
-        assertEquals(5, mid.val);
-        assertEquals(1, mid.next.val);
-        assertEquals(3, mid.next.next.val);
-        assertEquals(4, mid.next.next.next.val);
+        assertEquals(9, mid.val);
+        assertEquals(5, mid.next.val);
+        assertEquals(1, mid.next.next.val);
+        assertEquals(3, mid.next.next.next.val);
     }
 
     @Test
@@ -36,14 +37,14 @@ class SortListTest {
         mid.next = null;
         ListNode newHead = sortList.merge(left, right);
         System.out.println(newHead.val);
-        assertEquals(1, newHead.val);
-        assertEquals(3, newHead.next.val);
-        assertEquals(4, newHead.next.next.val);
-        assertEquals(12, newHead.next.next.next.val);
-        assertEquals(11, newHead.next.next.next.next.val);
-        assertEquals(2, newHead.next.next.next.next.next.val);
-        assertEquals(9, newHead.next.next.next.next.next.next.val);
-        assertEquals(5, newHead.next.next.next.next.next.next.next.val);
+        assertEquals(5, newHead.val);
+        assertEquals(1, newHead.next.val);
+        assertEquals(3, newHead.next.next.val);
+        assertEquals(4, newHead.next.next.next.val);
+        assertEquals(12, newHead.next.next.next.next.val);
+        assertEquals(11, newHead.next.next.next.next.next.val);
+        assertEquals(2, newHead.next.next.next.next.next.next.val);
+        assertEquals(9, newHead.next.next.next.next.next.next.next.val);
         assertNull(newHead.next.next.next.next.next.next.next.next);
     }
 
@@ -60,6 +61,7 @@ class SortListTest {
         assertEquals(11, newHead.next.next.next.next.next.next.val);
         assertEquals(12, newHead.next.next.next.next.next.next.next.val);
         assertNull(newHead.next.next.next.next.next.next.next.next);
+        SortList.printList(newHead);
     }
 
     @Test

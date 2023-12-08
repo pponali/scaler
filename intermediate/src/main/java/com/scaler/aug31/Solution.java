@@ -1,5 +1,7 @@
 package com.scaler.aug31;
 
+import java.util.Arrays;
+
 public class Solution {
 
     public static void main(String[] args) {
@@ -10,7 +12,7 @@ public class Solution {
         B[1][1] = 2;
         B[2][0] = 2;
         B[2][1] = 2;
-        rangeSum(new int[]{1, 2, 3}, B);
+        System.out.println(Arrays.toString(rangeSum(new int[]{1, 2, 3}, B)));
     }
     public static long[] rangeSum(int[] A, int[][] B) {
         int[] prefixArray = new int[A.length];

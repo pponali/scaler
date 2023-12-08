@@ -1,5 +1,6 @@
 package com.practice.day46;
 
+import com.practice.module6.day46.MiddleElementOfLinkedList;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -14,8 +15,8 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 
 @Slf4j
-class Middle_element_of_linked_listTest {
-    Middle_element_of_linked_list.ListNode head = null;
+class Middle_elementOfLinkedListTest {
+    MiddleElementOfLinkedList.ListNode head = null;
 
     /**
      * @BeforeEach is a JUnit 5 annotation that is used to initialize the test data before each test method is executed.
@@ -24,14 +25,14 @@ class Middle_element_of_linked_listTest {
      */
     @BeforeEach
     void setUp() {
-        head = new Middle_element_of_linked_list.ListNode(1);
-        head.next = new Middle_element_of_linked_list.ListNode(2);
-        head.next.next = new Middle_element_of_linked_list.ListNode(3);
-        head.next.next.next = new Middle_element_of_linked_list.ListNode(4);
-        head.next.next.next.next = new Middle_element_of_linked_list.ListNode(5);
-        head.next.next.next.next.next = new Middle_element_of_linked_list.ListNode(6);
-        head.next.next.next.next.next.next = new Middle_element_of_linked_list.ListNode(7);
-        head.next.next.next.next.next.next.next = new Middle_element_of_linked_list.ListNode(8);
+        head = new MiddleElementOfLinkedList.ListNode(1);
+        head.next = new MiddleElementOfLinkedList.ListNode(2);
+        head.next.next = new MiddleElementOfLinkedList.ListNode(3);
+        head.next.next.next = new MiddleElementOfLinkedList.ListNode(4);
+        head.next.next.next.next = new MiddleElementOfLinkedList.ListNode(5);
+        head.next.next.next.next.next = new MiddleElementOfLinkedList.ListNode(6);
+        head.next.next.next.next.next.next = new MiddleElementOfLinkedList.ListNode(7);
+        head.next.next.next.next.next.next.next = new MiddleElementOfLinkedList.ListNode(8);
         log.info(String.valueOf(head));
     }
 
@@ -47,14 +48,14 @@ class Middle_element_of_linked_listTest {
 
     @Test
     void middleElementOfLinkedList() {
-        int  middle  = Middle_element_of_linked_list.middleElementOfLinkedList(head);
+        int  middle  = MiddleElementOfLinkedList.middleElementOfLinkedList(head);
         log.info("middle " + middle);
         assertEquals(middle, 5);
     }
     @Test
     void middleElementOfLinkedOdd() {
-        head.next.next.next.next.next.next.next.next = new Middle_element_of_linked_list.ListNode(9);
-        int  middle  = Middle_element_of_linked_list.middleElementOfLinkedList(head);
+        head.next.next.next.next.next.next.next.next = new MiddleElementOfLinkedList.ListNode(9);
+        int  middle  = MiddleElementOfLinkedList.middleElementOfLinkedList(head);
         log.info("middle " + middle);
         assertEquals(middle, 5);
     }

@@ -76,7 +76,7 @@ public class GoodSubarraysEasy {
                         ans++;
                 } else {
                     int i1 = prefixevenArray[j] - prefixevenArray[i];
-                    if((j % 2 == 0 && i1 < B) || (j % 2 == 1 && i1 > B)) {
+                    if((j % 2 == 0 && i1 < B) || ((j & 1) == 1 && i1 > B)) {
                         ans++;
                     }
                 }
