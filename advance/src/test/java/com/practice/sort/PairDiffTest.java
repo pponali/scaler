@@ -1,6 +1,6 @@
 package com.practice.sort;
 
-import com.practice.day32.PairDiff;
+import com.practice.module5.day32.PairDiff;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

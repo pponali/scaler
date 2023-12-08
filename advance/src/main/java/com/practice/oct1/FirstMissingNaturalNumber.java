@@ -9,9 +9,9 @@ import java.util.Objects;
  */
 public class FirstMissingNaturalNumber {
     public static void main(String[] args) {
-        System.out.println("test   " + firtsMissingNaturalNumber(new ArrayList<>(Arrays.asList(2,3,1,2))));
+        System.out.println("test   " + firstMissingNaturalNumber(new ArrayList<>(Arrays.asList(2,3,1,2))));
     }
-    public static int firtsMissingNaturalNumber(ArrayList<Integer> A){
+    public static int firstMissingNaturalNumber(ArrayList<Integer> A){
 
         for(int i = 0; i < A.size(); i++) {
             while(A.get(i) != i + 1 && A.get(i) > 0 && A.get(i) <= A.size()){
