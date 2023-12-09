@@ -1,5 +1,6 @@
 package com.practice.day30;
 
+import com.practice.module4.day30.CountOfDivisors;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
