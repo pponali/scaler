@@ -1,4 +1,4 @@
-package com.practice.day47;
+package com.practice.module6.day47;
 
 import com.practice.module6.day47.CopyList;
 import org.junit.jupiter.api.AfterEach;

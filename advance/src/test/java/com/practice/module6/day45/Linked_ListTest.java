@@ -1,4 +1,4 @@
-package com.practice.day45;
+package com.practice.module6.day45;
 
 import com.practice.module6.day45.Linked_List;
 import org.junit.jupiter.api.AfterEach;

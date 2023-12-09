@@ -1,4 +1,4 @@
-package com.practice.day45;
+package com.practice.module6.day45;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

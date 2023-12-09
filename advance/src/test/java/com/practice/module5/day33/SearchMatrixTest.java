@@ -1,4 +1,4 @@
-package com.practice.day46.additional;
+package com.practice.module5.day33;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 /**
- * @Author Prakash Ponali(@pponali)
- * @Date 05/12/23
+ * @Author Prakash Ponali (@pponali)
+ * @Date 09/12/23
  * @Description
  */
-class SwapListNodesInPairsTest {
+class SearchMatrixTest {
 
     @BeforeEach
     void setUp() {
@@ -22,6 +22,6 @@ class SwapListNodesInPairsTest {
     }
 
     @Test
-    void swapListNodesInPairs() {
+    void searchMatrix() {
     }
 }

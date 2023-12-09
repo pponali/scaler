@@ -1,4 +1,4 @@
-package com.practice.day30;
+package com.practice.module4.day30;
 
 import com.practice.module4.day30.CountOfDivisors;
 import lombok.extern.slf4j.Slf4j;

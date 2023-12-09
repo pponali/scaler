@@ -1,4 +1,4 @@
-package com.practice.day46;
+package com.practice.module6.day46;
 
 import com.practice.module6.day46.MergeTwoSortedLists;
 import org.junit.jupiter.api.AfterEach;

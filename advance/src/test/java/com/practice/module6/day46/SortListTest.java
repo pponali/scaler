@@ -1,4 +1,4 @@
-package com.practice.day46;
+package com.practice.module6.day46;
 
 import com.practice.module6.day46.SortList;
 import com.practice.module6.day46.SortList.ListNode;
