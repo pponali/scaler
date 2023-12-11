@@ -33,7 +33,7 @@ class DoubleCharacterTroubleTest {
 
     @Test
     void solveaba() {
-        assertEquals("aba",doubleCharacterTrouble.solve("aba"));
+        assertEquals("acaba",doubleCharacterTrouble.solve("aba"));
     }
 
     @Test

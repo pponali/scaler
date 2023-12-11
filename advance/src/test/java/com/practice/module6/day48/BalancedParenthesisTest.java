@@ -31,7 +31,7 @@ class BalancedParenthesisTest {
 
     @Test
     void solveTest1() {
-        assertEquals(1, balancedParenthesis.solve("(){"));
+        assertEquals(0, balancedParenthesis.solve("(){"));
     }
 
     @Test

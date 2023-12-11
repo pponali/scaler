@@ -1,5 +1,7 @@
 package com.practice.module6.day48.additional;
 
+import java.util.Stack;
+
 /**
  * @Author Prakash Ponali (@pponali)
  * @Date 09/12/23
@@ -52,11 +54,36 @@ package com.practice.module6.day48.additional;
  *  ((a+b)) has redundant braces so answer will be 1.
  * Explanation 2:
  *
- *  (a+(a+b)) doesn't have have any redundant braces so answer will be 0.
+ *  (a+(a+b)) doesn't have any redundant braces so answer will be 0.
  */
 public class RedundantBraces {
 
+    Stack<Character> stack = new Stack<>();
+
     public int braces(String A) {
+        char[] chars = A.toCharArray();
+        for(char ch : chars){
+            if(!Character.isLetterOrDigit(ch)){
+                if(ch == ')' && stack.peek() == ')'){
+                    int count =0;
+                    while(!stack.isEmpty()){
+                        if(stack.peek() == '('){
+                            count++;
+                        } else {
+                            count--;
+                        }
+                        stack.pop();
+                        if(!stack.isEmpty() && (stack.peek() == '(') && count == 1) {
+                            return 1;
+                        } else {
+                            break;
+                        }
+                    }
+                } else {
+                    stack.push(ch);
+                }
+            }
+        }
         return 0;
     }
 }
