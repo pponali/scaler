@@ -70,9 +70,18 @@ package com.practice.module6.day50;
 public class PerfectNumbers {
 
     public int perfectNumber(int A){
-
-    return 0;
-
+        Queue<String> q = new Queue<>(5);
+        q.enqueue("1");
+        q.enqueue("2");
+        String frant = "0";
+        for (int i = 1; i < A; i++){
+            frant = q.front();
+            q.dequeue();
+            q.enqueue(frant + "1");
+            q.enqueue(frant + "2");
+        }
+        StringBuilder sb = new StringBuilder(frant);
+        return Integer.parseInt(frant + sb.reverse());
     }
 
 
