@@ -1,4 +1,4 @@
-package com.practice.module2.day8.day8;
+package com.practice.module2.day8;
 
 import java.util.Arrays;
 

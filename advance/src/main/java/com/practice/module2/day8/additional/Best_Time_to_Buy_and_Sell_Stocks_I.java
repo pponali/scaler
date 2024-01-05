@@ -1,4 +1,4 @@
-package com.practice.module2.day8.day8.additional;
+package com.practice.module2.day8.additional;
 
 /**
  * @Author prakashponali
