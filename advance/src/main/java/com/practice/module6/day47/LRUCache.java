@@ -1,5 +1,7 @@
 package com.practice.module6.day47;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.HashMap;
 
 /**
@@ -30,28 +32,59 @@ import java.util.HashMap;
  *          get(5)        returns -1
  *
  */
-public class LRUCache {
+
+@Slf4j
+public class LRUCache<V> {
 
     int capacity;
-    HashMap<Integer, ListNode> map = new HashMap<>();
-    ListNode head;
+    HashMap<V, ListNode<V>> map = new HashMap<>();
+    ListNode<V> head;
 
 
     public LRUCache(int capacity) {
         this.capacity = capacity;
-        head = new ListNode(-1);
-        ListNode tail = new ListNode(-1);
+        head = new ListNode<>((V) new Integer(-1));
+        ListNode<V> tail = new ListNode<V>((V) new Integer(-1));
         head.next = tail;
         tail.prev = head;
     }
 
-    public void set(int key, int value){
-
+    public void set(V value){
+        if(map.containsKey(value)){
+            remove(value);
+        }
+        addLast(value);
     }
 
-    public int get(int key){
+    public void remove(V key){
+        ListNode<V> node = map.get(key);
+        node.prev.next = node.next;
+        node.next.prev = node.prev;
+        node.next = null;
+        node.prev = null;
+        map.remove(key);
+    }
 
-        return 0;
+    public void deleteFirst(){
+        ListNode<V> node = head.next;
+        remove(node.val);
+    }
+
+    public void addLast(V value){
+        ListNode<V> node = new ListNode<>(value);
+        node.val = value;
+        map.put(value, node);
+        node.prev = head;
+        node.next = head.next;
+        head.next.prev = node;
+        head.next = node;
+        if(map.size() > capacity){
+            deleteFirst();
+        }
+    }
+
+    public V get(V key){
+        return map.get(key) != null ?  map.get(key).val : null;
     }
 
     public void setVal(int val){
@@ -63,20 +96,19 @@ public class LRUCache {
         return 0;
     }
 
-    public void setNode(ListNode node){
+    public void setNode(ListNode<V> node){
 
     }
 
-    public ListNode getNode(ListNode node){
-
+    public ListNode<V> getNode(ListNode<V> node){
         return null;
     }
 
-    public void setList(ListNode list){
+    public void setList(ListNode<V> list){
 
     }
 
-    public ListNode getList(ListNode list){
+    public ListNode<V> getList(ListNode<V> list){
 
         return null;
     }
@@ -100,12 +132,12 @@ public class LRUCache {
     }
 
 
-    public static class ListNode {
-        public int val;
-        public ListNode next;
-        public ListNode prev;
+    public static class ListNode<V> {
+        public V val;
+        public ListNode<V> next;
+        public ListNode<V> prev;
 
-        ListNode(int x) {
+        ListNode(V x) {
             val = x;
             next = null;
             prev = null;

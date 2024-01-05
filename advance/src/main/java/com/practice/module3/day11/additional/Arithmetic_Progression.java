@@ -1,6 +1,7 @@
-package com.practice.module3.day11.day11.additional;
+package com.practice.module3.day11.additional;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 /**
  * @Author prakashponali
@@ -61,8 +62,7 @@ public class Arithmetic_Progression {
     }
 
     public int arithmeticProgression(int[] A) {
-        List<Integer> list = new ArrayList<>(Arrays.stream(A).boxed().toList());
-        Collections.sort(list);
+        List<Integer> list = Arrays.stream(A).boxed().sorted().collect(Collectors.toList());
         int diff = 0;
         if (A.length >= 2) {
             diff = list.get(1) - list.get(0);

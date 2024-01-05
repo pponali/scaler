@@ -83,12 +83,8 @@ public class CheckTwoBracketExpressions {
     }
 
     private int precedence(char ch) {
-        return switch (ch) {
-            case '+', '-' -> 1;
-            case '/', '*' -> 2;
-            case '^' -> 3;
-            default -> -1;
-        };
+        return 1;
+
     }
 
 

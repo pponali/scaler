@@ -4,15 +4,8 @@ import java.util.ArrayList;
 import java.util.stream.IntStream;
 
 public class Allocate_Books {
-    public static void main(String[] args) {
-        Allocate_Books allocateBooks = new Allocate_Books();
-        int[] ints = new int[]{};
-        int B = 7;
-        ArrayList<Integer> list = new ArrayList<>(IntStream.of(ints).boxed().toList());
-        System.out.println(allocateBooks.solve(list, B));
-    }
 
-    private int solve(ArrayList<Integer> A, int B) {
+    public int solve(ArrayList<Integer> A, int B) {
 
         int l = 1,h = A.get(A.size() - 1),m = 0, ans = 0;
         while(l <= h){

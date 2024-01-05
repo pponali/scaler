@@ -1,5 +1,6 @@
 package com.practice.module3.day11.day11;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -71,10 +72,9 @@ public class Kth_Smallest_Element {
     }
 
     public int kthSmallestElement(int[] A, int B){
-        ;
-        List<Integer> list = new java.util.ArrayList<>(Arrays.stream(A).boxed().toList());
+        ArrayList list = new ArrayList<>(Collections.singleton(Arrays.stream(A).boxed()));
         Collections.sort(list);
-        return list.get(B -1);
+        return (int) list.get(B -1);
 
     }
 }
