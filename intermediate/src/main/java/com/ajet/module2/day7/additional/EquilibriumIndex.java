@@ -1,4 +1,4 @@
-package com.ajet.sep3;
+package com.ajet.module2.day7.additional;
 
 public class EquilibriumIndex {
 
