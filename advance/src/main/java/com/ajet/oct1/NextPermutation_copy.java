@@ -1,6 +1,6 @@
 package com.ajet.oct1;
 
-import com.ajet.sort.InsersionSort;
+import com.ajet.sort.InsertionSort;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -45,7 +45,7 @@ public class NextPermutation_copy {
 
         }
         if(!swap){
-            InsersionSort.insertionSort(A);
+            InsertionSort.insertionSort(A);
         }
 
 

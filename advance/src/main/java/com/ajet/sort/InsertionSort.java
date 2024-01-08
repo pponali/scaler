@@ -2,7 +2,7 @@ package com.ajet.sort;
 
 import java.util.Arrays;
 
-public class InsersionSort {
+public class InsertionSort {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(insertionSort(new int[]{4, 5, 23, 5, 6, 2, 5, 7, 8, 212, 6, 3})));
     }

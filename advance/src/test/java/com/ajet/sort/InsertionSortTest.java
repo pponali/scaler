@@ -5,11 +5,11 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 /**
- * @Author prakashponali
- * @Date 03/12/23
- * @Description
+ * Author prakashponali @pponali
+ * <p>
+ * Date   08/01/24 6:17 am
  */
-class SelectionSortTest {
+class InsertionSortTest {
 
     @BeforeEach
     void setUp() {
@@ -19,8 +19,7 @@ class SelectionSortTest {
     void tearDown() {
     }
 
-
     @Test
-    void selectionSort() {
+    void insertionSort() {
     }
 }
