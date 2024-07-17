@@ -12,6 +12,7 @@
         <module>intermediate</module>
         <module>advance</module>
         <module>LLD</module>
+        <module>dbsql</module>
     </modules>
 
     <properties>
