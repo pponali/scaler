@@ -14,6 +14,7 @@ package com.ajet.module9.day96.assignment.additional;
  * Which of the following is correct?
  * Choose the correct answer from below:
  * Your score for this problem will be decided based on your FIRST SUBMISSION ONLY
+ *
  * 1) Both a and b are true
  * 2) Only a is true
  * 3) Only b is true
