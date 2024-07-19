@@ -5,7 +5,7 @@ package com.ajet.module10.day106.session.solid.birdv2;
  * <p>
  * Date   19/07/24 7:35 am
  */
-public abstract class FlyingBird extends Bird{
+public abstract class FlyingBird extends Bird {
     public abstract void fly();
 
 }

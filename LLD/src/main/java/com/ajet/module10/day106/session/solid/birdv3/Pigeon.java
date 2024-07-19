@@ -1,11 +1,11 @@
-package com.ajet.module10.day106.session.solid.birdv5;
+package com.ajet.module10.day106.session.solid.birdv3;
 
 /**
  * Author prakashponali @pponali
  * <p>
  * Date   19/07/24 7:18 am
  */
-public class Pigeon  extends Bird implements Flyable{
+public class Pigeon  extends FlyingBird {
     /**
      *
      */

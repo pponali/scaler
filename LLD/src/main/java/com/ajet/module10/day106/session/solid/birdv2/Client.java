@@ -7,11 +7,12 @@ package com.ajet.module10.day106.session.solid.birdv2;
  */
 public class Client {
     public static void main(String[] args) {
-        Bird sparrow = new Pigeon();
-        sparrow.type = "Pigeon";
+        FlyingBird pigeon = new Pigeon();
+        pigeon.type = "Pigeon";
+        pigeon.fly();
 
-        FlyingBird nfb = new Pigeon();
-        nfb.fly();
+        NonFlyingBird penguin = new Penguin();
+        //penguin.fly();
 
     }
 

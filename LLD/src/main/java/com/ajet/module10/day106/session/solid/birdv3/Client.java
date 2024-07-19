@@ -1,4 +1,4 @@
-package com.ajet.module10.day106.session.solid.birdv5;
+package com.ajet.module10.day106.session.solid.birdv3;
 
 /**
  * Author prakashponali @pponali
@@ -7,10 +7,12 @@ package com.ajet.module10.day106.session.solid.birdv5;
  */
 public class Client {
     public static void main(String[] args) {
-        Bird sparrow = new Pigeon();
-        sparrow.type = "Pigeon";
-        Bird crow = new Crow();
-        crow.fly();
+        FlyingBird pigeon = new Pigeon();
+        pigeon.type = "Pigeon";
+        pigeon.fly();
+
+        NonFlyingBird penguin = new Penguin();
+        //penguin.fly();
 
     }
 
