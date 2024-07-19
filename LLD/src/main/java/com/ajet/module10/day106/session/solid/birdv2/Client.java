@@ -8,11 +8,12 @@ package com.ajet.module10.day106.session.solid.birdv2;
 public class Client {
     public static void main(String[] args) {
         FlyingBird pigeon = new Pigeon();
+        FlyingBird crow = new Crow();
         pigeon.type = "Pigeon";
         pigeon.fly();
-
+        //child of any class easily substitutable in parent class
         NonFlyingBird penguin = new Penguin();
-        //penguin.fly();
+        NonFlyingBird ostrich = new Ostrich();
 
     }
 

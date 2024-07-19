@@ -5,7 +5,7 @@ package com.ajet.module10.day106.session.solid.birdv3;
  * <p>
  * Date   19/07/24 7:19 am
  */
-public class Sparrow extends FlyingBird {
+public class Sparrow extends Bird implements Flyable{
     /**
      *
      */

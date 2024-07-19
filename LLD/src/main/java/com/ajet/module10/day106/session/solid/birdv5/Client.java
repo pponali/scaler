@@ -9,7 +9,7 @@ public class Client {
     public static void main(String[] args) {
         Bird sparrow = new Pigeon();
         sparrow.type = "Pigeon";
-        Bird crow = new Crow();
+        Flyable crow = new Crow();
         crow.fly();
 
     }

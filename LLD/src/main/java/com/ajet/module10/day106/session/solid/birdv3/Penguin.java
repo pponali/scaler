@@ -5,11 +5,7 @@ package com.ajet.module10.day106.session.solid.birdv3;
  * <p>
  * Date   19/07/24 7:25 am
  */
-public class Penguin extends NonFlyingBird {
-    /**
-     *
-     */
-
+public class Penguin extends Bird implements Swimmable{
 
     /**
      *
@@ -17,5 +13,13 @@ public class Penguin extends NonFlyingBird {
     @Override
     public void makeSound() {
         System.out.println("Penguin is making sound");
+    }
+
+    /**
+     *
+     */
+    @Override
+    public void swim() {
+        System.out.println("Penguin is swimming");
     }
 }
