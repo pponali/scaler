@@ -1,17 +1,23 @@
 package com.ajet.module10.day107.assignment.designpatterns.singleton.SingletonLog;
 
 /**
+ *
  * Author prakashponali @pponali
  * <p>
  * Date   22/07/24 4:21 pm
  */
-import org.springframework.boot.logging.LogLevel;
+
+
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.logging.Level;
 
+/**
+ * LoggerImpl is a implementation class for logger.
+ */
 public class LoggerImpl implements Logger {
 
     private FileWriter logFile;
@@ -29,11 +35,13 @@ public class LoggerImpl implements Logger {
      * <p>
      * Hint: Use the java.time.LocalDateTime class to get the current timestamp.
      *
-     * @param level
-     * @param message
+     * @param level - level
+     *
+     * @param message - message
+     *
      */
     @Override
-    public void log(LogLevel level, String message) {
+    public void log(Level level, String message) {
         if (!isInitialized) {
             throw new IllegalStateException("Logger not initialized. Call setLogFile() first.");
         }
@@ -54,7 +62,7 @@ public class LoggerImpl implements Logger {
     /**
      * This method returns the current log file path.
      *
-     * @param filePath
+     * @param filePath - filePath
      */
     @Override
     public void setLogFile(String filePath) {

@@ -5,11 +5,13 @@ package com.ajet.module10.day107.assignment.designpatterns.singleton.SingletonLo
  * <p>
  * Date   22/07/24 3:26 pm
  */
-import org.springframework.boot.logging.LogLevel;
+
+
+import java.util.logging.Level;
 
 public interface Logger {
 
-    void log(LogLevel level, String message);
+    void log(Level level, String message);
 
     void setLogFile(String filePath);
 
