@@ -1,4 +1,4 @@
-package com.ajet.module10.day108.assignment.designpatterns.builder.messagebuilder;
+package com.ajet.module10.day108.designpatterns.builder.assignment.messagebuilder;
 
 @WithBuilder
 public class MessageBuilderOld {

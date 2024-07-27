@@ -1,4 +1,4 @@
-package com.ajet.module10.day108.assignment.designpatterns.builder.querybuilder;
+package com.ajet.module10.day108.designpatterns.builder.assignment.querybuilder;
 
 public class Query {
     private String select;
@@ -103,7 +103,7 @@ public class Query {
         }
 
         public Query build(){
-            return new Query(select,from, where, join, orderBy, groupBy);
+            return new Query(select, from, where, join, orderBy, groupBy);
         }
     }
 }

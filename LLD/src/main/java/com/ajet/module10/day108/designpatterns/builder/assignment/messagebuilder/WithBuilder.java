@@ -1,4 +1,4 @@
-package com.ajet.module10.day108.assignment.designpatterns.builder.configuration;
+package com.ajet.module10.day108.designpatterns.builder.assignment.messagebuilder;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

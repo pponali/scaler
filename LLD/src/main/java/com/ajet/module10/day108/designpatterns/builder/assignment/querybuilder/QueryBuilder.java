@@ -1,4 +1,4 @@
-package com.ajet.module10.day108.assignment.designpatterns.builder.querybuilder;
+package com.ajet.module10.day108.designpatterns.builder.assignment.querybuilder;
 
 @WithBuilder
 public class QueryBuilder {

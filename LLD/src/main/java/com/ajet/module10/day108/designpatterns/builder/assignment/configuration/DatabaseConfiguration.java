@@ -1,4 +1,4 @@
-package com.ajet.module10.day108.assignment.designpatterns.builder.configuration;
+package com.ajet.module10.day108.designpatterns.builder.assignment.configuration;
 
 public class DatabaseConfiguration {
     private String databaseUrl;

@@ -1,4 +1,4 @@
-package com.ajet.module10.day108.session.designpatterns.builder;
+package com.ajet.module10.day108.designpatterns.builder.session;
 
 public class Student {
 
