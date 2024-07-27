@@ -1,4 +1,4 @@
-package com.ajet.module10.day107.assignment.designpatterns.singleton.SingletonLog;
+package com.ajet.module10.day107.designpatterns.singleton.assignment.SingletonLog;
 
 /**
  * Author prakashponali @pponali

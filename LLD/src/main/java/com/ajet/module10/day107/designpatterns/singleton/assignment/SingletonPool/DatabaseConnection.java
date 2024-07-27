@@ -1,4 +1,4 @@
-package com.ajet.module10.day107.assignment.designpatterns.singleton.SingletonPool;
+package com.ajet.module10.day107.designpatterns.singleton.assignment.SingletonPool;
 
 public class DatabaseConnection {
     private boolean isAvailable;

@@ -1,4 +1,4 @@
-package com.ajet.module10.day107.assignment.designpatterns.singleton.JavaSingletonExercise;
+package com.ajet.module10.day107.designpatterns.singleton.assignment.JavaSingletonExercise;
 
 import java.util.Optional;
 

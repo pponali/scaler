@@ -1,4 +1,4 @@
-package com.ajet.module10.day107.session.designpatterns.singleton;
+package com.ajet.module10.day107.designpatterns.singleton.session;
 
 /**
  * Author prakashponali @pponali
