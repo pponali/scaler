@@ -43,3 +43,5 @@ update employees set new_salary = round(salary + (salary * 20 / 100));
 select emp_id, name, salary, round(salary + (salary * 20 / 100)) as New_salary from employees order by emp_id;
 
 
+
+
