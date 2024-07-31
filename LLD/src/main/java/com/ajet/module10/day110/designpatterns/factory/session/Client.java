@@ -6,6 +6,8 @@ import com.ajet.module10.day110.designpatterns.factory.session.uicomponents.UICo
 
 public class Client {
     public static void main(String[] args) {
+
+
         Platform platform = PlatformFactory.getPlatformInstance(null);
         UIComponentFactory uiComponentFactory = platform.createUIComponentFactory();
         UIComponent uiComponent = uiComponentFactory.createMenuComponent();
