@@ -1,16 +1,14 @@
-package com.ajet.module10.day111.designpatterns.adapter.session.adapter.icicibank;
+package com.ajet.module10.day111.designpatterns.adapter.session.icicibank;
 
 public class ICICIBankPaymentRequest {
     private String accountNumber;
     private String ifscCode;
-    private String amount;
+    private double amount;
     private String paymentMode;
 
-    public ICICIBankPaymentRequest(String accountNumber, String ifscCode, String amount, String paymentMode) {
+    public ICICIBankPaymentRequest(String accountNumber, double amount) {
         this.accountNumber = accountNumber;
-        this.ifscCode = ifscCode;
         this.amount = amount;
-        this.paymentMode = paymentMode;
     }
 
     public String getAccountNumber() {
@@ -21,7 +19,7 @@ public class ICICIBankPaymentRequest {
         return ifscCode;
     }
 
-    public String getAmount() {
+    public double getAmount() {
         return amount;
     }
 

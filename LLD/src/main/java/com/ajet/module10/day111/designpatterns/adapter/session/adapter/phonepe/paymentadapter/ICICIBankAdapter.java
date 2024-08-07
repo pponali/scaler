@@ -1,10 +1,12 @@
 package com.ajet.module10.day111.designpatterns.adapter.session.adapter.phonepe.paymentadapter;
 
-public class ICICIBankAdapter implements UPIPaymentAdapter {
+import com.ajet.module10.day111.designpatterns.adapter.session.icicibank.ICICIBankAPI;
 
-    ICICIBank api = new ICICIBank();
+public class ICICIBankAdapter {//implements UPIPaymentAdapter {
 
-    @Override
+    ICICIBankAPI api = new ICICIBankAPI();
+
+    /*@Override
     public void pay(String amount) {
         api.pay(amount);
     }
@@ -12,5 +14,5 @@ public class ICICIBankAdapter implements UPIPaymentAdapter {
     @Override
     public void receive(String amount) {
         api.receive(amount);
-    }
+    }*/
 }
