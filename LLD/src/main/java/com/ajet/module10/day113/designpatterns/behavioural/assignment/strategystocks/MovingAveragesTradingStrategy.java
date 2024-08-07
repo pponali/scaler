@@ -1,0 +1,15 @@
+package com.ajet.module10.day113.designpatterns.behavioural.assignment.strategystocks;
+
+public class MovingAveragesTradingStrategy implements TradingIndicatorStrategy{
+
+    @Override
+    public TradingStrategyType supportsType() {
+        return TradingStrategyType.MOVING_AVERAGES;
+    }
+
+    @Override
+    public Double calculateIndicator(Stock stock) {
+        return (stock.getPrice() + stock.getPreviousPrice()) / 2;
+    }
+
+}
