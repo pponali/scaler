@@ -1,6 +1,6 @@
 package com.ajet.module10.day113.designpatterns.behavioural.session.observer;
 
-public class StasticsDisplay implements Observer, DisplayElement {
+public class StatisticsDisplay implements Observer, DisplayElement {
     WeatherData weatherData;
     private float temperature;
     private int humidity;
@@ -13,7 +13,7 @@ public class StasticsDisplay implements Observer, DisplayElement {
         this.pressure = pressure;
     }
 
-    StasticsDisplay(WeatherData weatherData) {
+    StatisticsDisplay(WeatherData weatherData) {
         this.weatherData = weatherData;
         weatherData.register(this);
     }
