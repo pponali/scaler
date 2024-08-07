@@ -7,4 +7,4 @@ public interface Subject {
     void unregister(Observer observer);
 
     void notifyObservers();
-}
+} 
