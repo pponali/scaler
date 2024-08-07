@@ -1,4 +1,4 @@
-package com.ajet.module4.day30.day30.additional;
+package com.ajet.module4.day30.additional;
 
 public class Compute_nCr_mod_m {
     public static void main(String[] args) {

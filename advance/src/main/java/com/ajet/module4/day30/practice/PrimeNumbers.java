@@ -1,4 +1,4 @@
-package com.ajet.module4.day30.day30.practice;
+package com.ajet.module4.day30.practice;
 
 /**
  * @Author prakashponali
