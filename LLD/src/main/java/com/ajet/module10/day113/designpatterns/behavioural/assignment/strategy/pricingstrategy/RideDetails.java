@@ -1,4 +1,4 @@
-package com.ajet.module10.day113.designpatterns.behavioural.assignment.pricingstrategy;
+package com.ajet.module10.day113.designpatterns.behavioural.assignment.strategy.pricingstrategy;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

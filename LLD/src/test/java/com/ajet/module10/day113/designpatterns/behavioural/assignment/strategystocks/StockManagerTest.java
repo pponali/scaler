@@ -1,5 +1,9 @@
 package com.ajet.module10.day113.designpatterns.behavioural.assignment.strategystocks;
 
+import com.ajet.module10.day113.designpatterns.behavioural.assignment.strategy.strategystocks.Stock;
+import com.ajet.module10.day113.designpatterns.behavioural.assignment.strategy.strategystocks.StockTradingManager;
+import com.ajet.module10.day113.designpatterns.behavioural.assignment.strategy.strategystocks.TradingIndicatorStrategy;
+import com.ajet.module10.day113.designpatterns.behavioural.assignment.strategy.strategystocks.TradingStrategyType;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.junit.jupiter.MockitoExtension;
