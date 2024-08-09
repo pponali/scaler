@@ -4,18 +4,18 @@ import com.ajet.module10.day113.designpatterns.behavioural.assignment.observer.w
 import com.ajet.module10.day113.designpatterns.behavioural.assignment.observer.weatherobserver.services.PressureService;
 import com.ajet.module10.day113.designpatterns.behavioural.assignment.observer.weatherobserver.services.TemperatureService;
 
-public class WeatherMonitoringApplication {
+public class WeatherMonitoringApplication extends Publisher{
 
     private double temperature;
     private double humidity;
     private double pressure;
-    private double temperatureThreshold;
-    private double humidityThreshold;
-    private double pressureThreshold;
+    private final double temperatureThreshold;
+    private final double humidityThreshold;
+    private final double pressureThreshold;
 
-    private TemperatureService temperatureService = new TemperatureService();
-    private HumidityService humidityService = new HumidityService();
-    private PressureService pressureService = new PressureService();
+    private final TemperatureService temperatureService = new TemperatureService();
+    private final HumidityService humidityService = new HumidityService();
+    private final PressureService pressureService = new PressureService();
 
     // DO NOT MODIFY THIS CONSTRUCTOR
     public WeatherMonitoringApplication(double initialTemperature, double initialHumidity, double initialPressure,
@@ -35,15 +35,15 @@ public class WeatherMonitoringApplication {
         pressure = newPressure;
 
         if (temperature > temperatureThreshold) {
-            temperatureService.trigger(temperature);
+            notifyObservers(temperature);
         }
 
         if (humidity > humidityThreshold) {
-            humidityService.trigger(humidity);
+            notifyObservers(humidity);
         }
 
         if (pressure > pressureThreshold) {
-            pressureService.trigger(pressure);
+            notifyObservers(pressure);
         }
     }
 }
